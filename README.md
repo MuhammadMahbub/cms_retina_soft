@@ -34,13 +34,14 @@ php artisan migrate:fresh --seed
 
 
 ## Main Functionality
-    1.  Login, Registration with google api
-    2.  User online and offline status check
-    3.  User banned 
-    4.  Role change
+    1.  Login, Registration 
+    2.  Role change
+    3.  User online and offline status check
+    4.  User banned 
     5.  User profile update
     6.  Client Crud
     7.  Softdelets 
     8.  Individual Dashboard
-    9.  When create client then send mail to client email 
-    10. Dynamic Chart
+    9.  When Admin create client then send mail to client email 
+    10. Balance Added by Admin
+    11. Dynamic Chart
