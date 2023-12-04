@@ -29,7 +29,7 @@ class UserSeeder extends Seeder
         DB::table('users')->insert([
             'name' => "customer",
             'image' => 'backend/assets/images/default.jpg',
-            'role' => 1,
+            'role' => 2,
             'isban' => 1,
             'email' => "customer@gmail.com",
             'password' => Hash::make('customer@gmail.com'),
