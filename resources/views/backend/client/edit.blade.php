@@ -23,7 +23,7 @@
                     @method('PUT')
                     <div class="form-group">
                         <label>Client Name <span class="text-danger">*</span></label>
-                        <input type="text" class="form-control  @error('client_name') is-invalid @enderror" value="{{ $client->client_name }}" name="client_name" placeholder="Enter client name">
+                        <input type="text" class="form-control  @error('client_name') is-invalid @enderror" value="{{ $client->user->name }}" name="client_name" placeholder="Enter client name">
                         @error('client_name')
                             <span class="invalid-feedback" role="alert">
                                 <strong>{{ $message }}</strong>
@@ -32,7 +32,7 @@
                     </div>
                     <div class="form-group">
                         <label>Client Email <span class="text-danger">*</span></label>
-                        <input type="text" class="form-control  @error('client_email') is-invalid @enderror" value="{{ $client->email }}" name="client_email" placeholder="Enter client email">
+                        <input type="text" class="form-control  @error('client_email') is-invalid @enderror" value="{{ $client->user->email }}" name="client_email" placeholder="Enter client email">
                         @error('client_email')
                             <span class="invalid-feedback" role="alert">
                                 <strong>{{ $message }}</strong>
