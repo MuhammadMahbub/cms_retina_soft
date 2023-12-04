@@ -20,6 +20,9 @@ class UserMiddleware
      */
     public function handle(Request $request, Closure $next)
     {
+        if (Auth::user()->role != '1') {
+            return redirect()->back();
+        }
 
         if(Auth::check() && Auth::user()->isban == 0){
             Auth::logout();

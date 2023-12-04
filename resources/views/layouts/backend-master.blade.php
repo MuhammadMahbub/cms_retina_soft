@@ -165,7 +165,7 @@
                         </ul>
                     </li>
 
-                @elseif (Auth::user()->role == 2)
+                {{-- @elseif (Auth::user()->role == 2)
                     <li>
                         <a href="javascript: void(0);"><i class="ti-settings"></i><span>Settings</span><span class="menu-arrow"><i class="mdi mdi-chevron-right"></i></span></a>
                         <ul class="nav-second-level" aria-expanded="false">
@@ -178,7 +178,7 @@
                         <ul class="nav-second-level" aria-expanded="false">
                             <li class="nav-item"><a class="nav-link" href="{{ route('mail.index') }}"><i class="ti-control-record"></i>Mail Body</a></li>
                         </ul>
-                    </li>
+                    </li> --}}
                 @endif
 
 
